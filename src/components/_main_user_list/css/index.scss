@@ -1,0 +1,113 @@
+$color4ff6f3: #4ff6f3;
+.math-bg {
+  background: #172136;
+  box-shadow: 0 0 10px #5f83d0 inset;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  position: relative;
+  .math-border {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left: 0;
+    border-radius: 8px 0 0 0;
+    border-top: 2px solid $color4ff6f3;
+    border-left: 2px solid $color4ff6f3;
+  }
+  .math-border2 {
+    transform: rotate(90deg);
+    left: auto;
+    right: 0;
+  }
+  .math-border3 {
+    transform: rotate(180deg);
+    left: auto;
+    right: 0;
+    bottom: 0;
+  }
+  .math-border4 {
+    transform: rotate(270deg);
+    bottom: 0;
+  }
+}
+.user-lists {
+  height: 100%;
+  color: $color4ff6f3;
+  .user-lists-con {
+    height: 100%;
+    overflow: hidden;
+  }
+  .math-sort {
+    padding: 0 30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    .math-sort-h2 {
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 30px;
+      padding: 30px 0 20px;
+    }
+    .math-user-tab {
+      display: flex;
+      span {
+        flex: 1;
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 3px;
+        cursor: pointer;
+        &.active {
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 64px;
+            height: 4px;
+            transform: translate3d(-50%, 0, 0);
+            border-radius: 2px;
+            background-color: $color4ff6f3;
+          }
+        }
+      }
+    }
+    .math-user-list {
+      position: inherit;
+      width: 80%;
+      height: 72%;
+      overflow: hidden;
+      li {
+        display: flex;
+        align-items: center;
+        padding: 15px 0 5px 15px;
+        font-size: 16px;
+        > * {
+          margin-right: 15px;
+        }
+        .math-user-sort {
+          color: #fff;
+        }
+        .math-user-icon {
+          width: 60px;
+          height: 60px;
+          background: url("./img/user_icon.png") no-repeat;
+          background-size: 100% 100%;
+          border-radius: 50%;
+        }
+        .math-user-info {
+          color: $color4ff6f3;
+          .math-user-name {
+            line-height: 20px;
+          }
+          .math-user-infos {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}

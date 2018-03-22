@@ -1,0 +1,101 @@
+$color4ff6f3: #4ff6f3;
+.math-bg {
+  background: #172136;
+  box-shadow: 0 0 10px #5f83d0 inset;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  position: relative;
+  height: 100%;
+  .math-border {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left: 0;
+    border-radius: 8px 0 0 0;
+    border-top: 2px solid $color4ff6f3;
+    border-left: 2px solid $color4ff6f3;
+  }
+  .math-border2 {
+    transform: rotate(90deg);
+    left: auto;
+    right: 0;
+  }
+  .math-border3 {
+    transform: rotate(180deg);
+    left: auto;
+    right: 0;
+    bottom: 0;
+  }
+  .math-border4 {
+    transform: rotate(270deg);
+    bottom: 0;
+  }
+  .math-login {
+    padding: 5% 0;
+    height: 100%;
+  }
+  .math-h2 {
+    margin: 0 auto;
+    position: relative;
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    color: $color4ff6f3;
+    border-top: 2px solid $color4ff6f3;
+    border-bottom: 2px solid $color4ff6f3;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -14px;
+      top: 4px;
+      width: 28px;
+      height: 28px;
+      border-left: 2px solid $color4ff6f3;
+      border-top: 2px solid $color4ff6f3;
+      transform: rotate(-45deg);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      right: -14px;
+      top: 4px;
+      width: 28px;
+      height: 28px;
+      border-right: 2px solid $color4ff6f3;
+      border-top: 2px solid $color4ff6f3;
+      transform: rotate(45deg);
+    }
+  }
+  .math-icon {
+    margin: 15px auto 0;
+    width: 80px;
+    height: 80px;
+    display: block;
+    background: url("./img/math_icon.png") no-repeat;
+    background-size: 100% auto;
+  }
+  .math-icon2 {
+    background-position-y: 0;
+  }
+  .math-icon3 {
+    background-position-y: -115px;
+  }
+  .math-icon1 {
+    background-position-y: -230px;
+    background-size: 100% auto;
+  }
+  .math-icon0 {
+    background-position-y: -343px;
+  }
+  .math-circle-list {
+    width: 130px;
+    margin: 15px auto 0;
+  }
+  .math-circle {
+    width: 54px;
+    height: 54px;
+  }
+}

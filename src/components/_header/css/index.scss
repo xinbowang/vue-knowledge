@@ -1,0 +1,75 @@
+.my-nav {
+  padding: 0;
+  .my-logo {
+    background: #ccc;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .my-navbar {
+    height: inherit;
+    padding: 0;
+  }
+  .my-collapse{
+    align-items: start;
+    width: 100%;
+  }
+  .my-user {
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+    .user-icon {
+      width: 70px;
+      height: 70px;
+      display: inline-block;
+      border-radius: 50%;
+      background: url("./img/user_icon.png");
+      background-size: 100% 100%;
+    }
+    .user-name {
+      font-size: 14px;
+      line-height: 28px;
+    }
+    .user-inf {
+      font-size: 12px;
+    }
+  }
+  .my-logout{
+    .my-logout-btn {
+      padding: 0;
+      color: #fff;
+      font-size: 14px;
+    }
+    .icon {
+      display: inline-block;
+      vertical-align: text-top;
+      width: 16px;
+      height: 16px;
+      background: url("./img/icon.png") center no-repeat;
+      background-size: 100% auto;
+    }
+    .icon2 {
+      width: 20px;
+      height: 18px;
+      background-position-y: -35px;
+    }
+  }
+}
+
+// 媒体查询
+@media screen and (min-width: 576px) {
+  .my-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 94px;
+    z-index: 999;
+    background: #173f65;
+    .my-logout{
+      position: absolute;
+      bottom: 5%;
+      width: 100%;
+    }
+  }
+}
