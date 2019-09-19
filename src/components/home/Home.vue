@@ -39,7 +39,7 @@
     name: 'Home',
     data() {
       return {
-        api: 'http://10.0.2.251:8007'
+        api: 'http://0.0.0.0'
       };
     },
     computed: {
